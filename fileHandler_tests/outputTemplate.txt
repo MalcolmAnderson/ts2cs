@@ -1,0 +1,35 @@
+using NUnit.Framework;
+using System.Collections.Generic;
+using System.IO;
+using System;
+
+namespace ohcsac
+{
+    public class <<ClassName>>  // class name here
+    {
+	<<tk new signature>>
+        public string reverseAString(string str)
+        {
+        }
+    }
+
+
+    public class <<ClassName>>_Tests
+    {
+        <<ClassName>> algorithms; 
+        
+        [SetUp]
+        public void Setup()
+        {
+            algorithms = new <<ClassName>>();
+        }
+
+        [Test]
+        public void <<ClassName>>_WorksAsExpected()
+        {
+            <<Assertion Statements>>
+            Assert.AreEqual("ydwoH", algorithms.reverseAString("Howdy"));
+            Assert.AreEqual("olleh", algorithms.reverseAString("hello"));
+        }
+    }
+}
