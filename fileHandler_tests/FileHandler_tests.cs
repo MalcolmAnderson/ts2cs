@@ -115,9 +115,9 @@ namespace ts2cs
             string outString = "";
             for (int i = 0; i < source.Length; i++)
             {
-                int semicolonloc = source[i].IndexOf(':');
-                string pName = source[i].Substring(0, semicolonloc).Trim();
-                string pType = source[i].Substring(semicolonloc + 1).Trim();
+                int semicolonIndex = source[i].IndexOf(':');
+                string pName = source[i].Substring(0, semicolonIndex).Trim();
+                string pType = source[i].Substring(semicolonIndex + 1).Trim();
                 if (pType == "number")
                 {
                     pType = "int";
