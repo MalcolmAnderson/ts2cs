@@ -3,9 +3,8 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 
+
 namespace ts2cs
-
-
 {
     public class FileHandler
     {
@@ -14,9 +13,6 @@ namespace ts2cs
             string[] directories = Directory.GetDirectories(directoryName);
             return directories.Length;
         }
-
-
-
 
         public string[] getFileContents(string fileNameAndPath)
         {
