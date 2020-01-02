@@ -72,7 +72,6 @@ namespace ts2cs
             {
                 outputArray[i] = outputArray[i].Trim();
             }
-
             return outputArray;
         }
 
@@ -147,8 +146,6 @@ namespace ts2cs
             o = new FileHandler();
         }
 
-
-
         [Test]
         public void GetParameters_ForOneType()
         {
@@ -159,7 +156,6 @@ namespace ts2cs
             Assert.AreEqual(expected, actual);
         }
 
-
         [Test]
         public void BuildParameterString_ForOneType()
         {
@@ -168,6 +164,7 @@ namespace ts2cs
             string actual = o.FormatParameters(source);
             Assert.AreEqual(expected, actual);
         }
+
         [Test]
         public void BuildParameterString_ForMultipleTypes()
         {
